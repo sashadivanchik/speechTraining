@@ -1,4 +1,4 @@
-type Sounds = ReadonlyArray<string[]>;
+export type Sounds = ReadonlyArray<string[]>;
 
 export const sounds: Sounds = [
   [

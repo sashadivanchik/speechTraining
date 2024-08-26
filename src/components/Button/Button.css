@@ -1,0 +1,15 @@
+.button {
+    background: transparent;
+    padding: 5px;
+    outline: none;
+    border: 1px solid rgba(123, 117, 120, 0.8);
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.buttonActive {
+    background: rgba(161, 137, 149, 0.8);
+    color: white;
+}
+
+
