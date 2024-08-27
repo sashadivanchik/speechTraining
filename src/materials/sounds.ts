@@ -1,6 +1,6 @@
-export type Sounds = ReadonlyArray<string[]>;
+export type SoundsType = ReadonlyArray<string[]>;
 
-export const sounds: Sounds = [
+export const sounds: SoundsType = [
   [
     'и э а о у ы е я ё ю'
   ],

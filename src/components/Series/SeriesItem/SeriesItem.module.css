@@ -1,0 +1,4 @@
+.seriesItem {
+    display: grid;
+    grid-template-columns: repeat(10, 65px);
+}

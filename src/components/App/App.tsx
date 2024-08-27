@@ -1,18 +1,21 @@
 import './App.css'
 import { Patters } from "../Patters/Patters";
-import { RandomSounds } from "../RandonSounds/RandomSounds";
-import { SoundSeries } from "../SoundSeries/SoundSeries";
+import { Sounds } from "../Sounds/Sounds";
+import { Series } from "../Series/Series";
 import { useState } from "react";
 import { Tabs } from "../Tabs/Tabs";
+
+export const FULL_TRAINING = 'FULL';
+export const SHORT_TRAINING = 'SHORT';
 
 const tabs = [
   {
     name: 'Большая',
-    value: 'full'
+    value: FULL_TRAINING
   },
   {
     name: 'Короткая',
-    value: 'short'
+    value: SHORT_TRAINING
   }
 ];
 
@@ -23,8 +26,8 @@ export const App = () => {
     <>
       <h1>Speech</h1>
       <Tabs tabs={tabs} onClick={setCurrentTab} />
-      <SoundSeries trainingType={currentTab.value} />
-      <RandomSounds trainingType={currentTab.value} />
+      <Series trainingType={currentTab.value} />
+      <Sounds trainingType={currentTab.value} />
       <Patters trainingType={currentTab.value} />
     </>
   )

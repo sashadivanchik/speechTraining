@@ -1,14 +1,18 @@
 import { ButtonProps } from "./types";
-import './Button.css';
+import style from './Button.module.css';
 
 export const Button = ({
   onClick,
   value,
-  styleClass = ''
+  styleClass = '',
+  isActive
 }: ButtonProps) => {
+
+  const isActiveClass = isActive ? style.buttonActive : '';
+
   return (
     <button
-      className={`button ${styleClass}`}
+      className={`${style.button} ${isActiveClass} ${styleClass}`}
       onClick={onClick}
     >
       {value}

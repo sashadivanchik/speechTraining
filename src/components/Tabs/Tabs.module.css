@@ -1,0 +1,6 @@
+.tabsContainer {
+    display: grid;
+    grid-template-columns: 210px 210px;
+    gap: 10px;
+    justify-content: center;
+}

@@ -1,8 +1,13 @@
-type PatterProps = {
-  content: string
-}
-export const PatterItem = ({ content }: PatterProps) => {
+type PatterItemProps = {
+  title: string;
+  content: string[]
+};
+export const PatterItem = ({ content, title }: PatterItemProps) => {
   return (
-    <div>{content}</div>
-  )
+    <li>
+      <h3>{title}</h3>
+      <div>{content.join(' ')}</div>
+    </li>
+
+  );
 };
