@@ -43,7 +43,7 @@ export const Series = ({
         <h2>Звуковые ряды</h2>
         <p>Каждую строку: медленно, шепотом, с пробкой, без пробки с нормальной скоростью, пятый раз быстро</p>
         {trainingType === FULL_TRAINING ? (
-          <ul>
+          <ul className={style.seriesContainerFull}>
             {soundSeries.map((item, i) => {
               return (
                 <li key={i} className={style.seriesContainer}>
