@@ -16,7 +16,14 @@ export const SeriesItem = ({
             key={i}
           >
             {
-              item.split(' ').map((item, i) => <span key={i}>{item}</span>)
+              item.split(' ').map((item, i) => (
+                <span
+                  className={style.subItem}
+                  key={i}
+                >
+                  {item}
+                </span>
+              ))
             }
           </li>)
       })}
